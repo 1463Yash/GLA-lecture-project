@@ -1,0 +1,303 @@
+INTERNET -Connection of global computer.Internet is provided by submarine optice fibre cable.
+
+web application-Collection of webpages.
+web page- Combination of HTML,CSS,JS.
+
+Note-JS is the only language which understand by the browser(in the current time).
+
+HTML-Hyper text markup language.
+
+HTML-name.html (.html is the extension for save the html file)
+------------------heading tag-------------
+
+HTML tags-Heading Tags
+	H1
+	H2
+	H3
+	H4
+	H5
+	H6
+	H7
+
+<h/>______________<h/>
+opening tag       closing tag
+------------paragraph-----------------
+
+<p>_______</p> paragraph tag
+
+lorem______this is used for random text [lorem*5]-____used for 5line text,lorem7_______--used for 7word text.
+
+----------------List------------------
+ List tag
+	list tag_______li
+>Order list________ ol(list tag to create ordered list)
+>Unordered list___________ul(list tag to create unordered list)
+----------ordered list-------------------
+Note-    
+	<ol type="A" start="8">
+	 type can be ("A","1","i")
+ 	 start ("1")
+<ol type="A" reversed>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ol> 
+Note- reversed is used for reversed the number.
+ 
+-----------	unordered list------------
+  <ul type="circle">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+Note- type can be "circle","Square" etc
+
+<!--Nested list-->
+    <h1>Movies</h1>
+    <ul>
+        <li>
+            Bollywood
+            <ul>
+                <li>Kalki</li>
+                <li>Kranti</li>
+            </ul>
+        </li>
+        <li>Hollywood
+            <ul>
+                <li>Avengers</li>
+                <li>MCU</li>
+            </ul>
+        </li>
+
+    </ul>
+----------------Attributes-----------
+id:- To uniquely define a tag.
+ <h1 id="one"
+Can't  give same value of id to another tag.
+
+class:-To group different tags.
+
+name:- most useful tag in inputs of form
+    #store data entered by a user in input.
+
+Inputs:-To provide space to user for typing.
+
+ <input type="text">
+ <input type="number" name="" id="">
+ <input type="color" name="" id="">
+ <input type="checkbox" name="" id="">
+ <input type="file" name="" id="">
+ <input type="email" name="" id="">
+ <input type="range" name="" id="">
+ <input type="hidden" name="">
+ Note:- We can use multiple type of inputs.
+
+Placeholder:- provides information to user which detail he/she need to fill.
+ <input type="text" placeholder="Full name"><br>
+ <input type="number" name="" id="" placeholder="Contact"><br>
+
+name:- ato store detail fill by user.
+
+value:-To show input already fill.
+ <input type="number" name="" id="" placeholder="Contact" value="0000000"><br>
+
+---------------------form------------------------
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>User form</legend>
+        <form>
+        <label for="fullName">fullName</label>
+        <input type="text" id="fullName" placeholder="fullName" required><br>
+        <label for="useremail">Email</label>
+        <input type="text" name="useremail" id="useremail" placeholder="xyz@12344@gamil.com" required>
+        <br>
+        <label for="password">password</label>
+        <input type="password" name="" minlength="6" id="password" placeholder="*********" required><br>
+        <h3>Gender</h3>
+        <input type="radio" name="Gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="Gender" id="Female">
+        <label for="Female">Female</label><br>
+        <input type="submit" value="submit  form"><br>
+        <button type="submit">submit</button>
+    </form>
+</fieldset>
+</body>
+</html>
+-----------------------------------------------------------------
+form:-we cab submit form in twi ways/methods
+    .get- this method is used for get data from server to client.
+    >>to get  data from server.
+    >>securty issue-All tthe data is visible in url.
+    post-this method is used for send the data to client to server.
+    >>To send data for storage in server.
+    >>secure
+    Note-Data send in form of query string parameter.
+    <form method ="post">
+----------------table------------------------------------------
+ <table border="1">
+       <thead>
+        <tr>
+        <th>Date</th>
+        <th>Days</th>
+        <th>EN_Time</th>
+        <th>EX_time</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+            <td>D1</td>
+            <td>DT1</td>
+            <td>11:00</td>
+        </tr>
+        <tr>
+            <td>D2</td>
+            <td>DT2</td>
+            <td colspan="2">10:00</td>
+        </tr>
+       </tbody>
+    </table>
+---------------------------------Structure of web page---------------------------
+Navbar-
+Main-
+Footer-
+
+
+Structure tags:-
+                Section>>
+                        Content>>Categories
+                        Hero>>Landing pages
+                        developers/company choose>> e.g>>
+                                                        different product/features
+                                                        rating
+                                                        Contact
+                div:-
+                    This is the type of container.
+                    To further divide the content of section or we have 
+ ______________________________________________________________________________________________________________________________________
+
+
+ --------------------------------CSS (Cascading style sheet)---------------------------------
+ 1:-Inline-:   Style tag is used in inline code.
+    <h1 style="Her we can write the property of css. ">WLecome</h1>
+2:-Internal:- we have to select a tag to apply srtyling.
+
+    SYNTAX:
+    selector{
+        property:value;
+    }
+            a-Basic selector
+            b-Tag  ,,    --> select using the name of tag.
+            c-Id ,,      --> "#" is used for select id.(This have highest prefrence.1st)
+            d-class ,,   -->"classname" it is used for select the class (2nd prefrence)
+            e-Universal ,,  -->"*" this used for select all file.(lowest prefrence.)
+            f-Attribute ,, -->"input[type=""]" we can target any attriute using this attribute tag.(3rd prefrence)
+--------------------------------------------------
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>THis is this the internal styling.Here we can add our property using the selector.</style>    
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------
+ 3:-External
+
+
+
+Note-
+    prefrence list of CSS type.
+    inline
+      |
+      |
+      |
+      |
+   "external and internal" have same prefrence,But inline have more prefrence than both.
+-------------------------------------------------------------------------------------------------------
+Combinaton selector:-
+            1.child selector -> 
+                                div>p
+            2.decendant ->#container p{ }
+            3.next-sibling ->p + a{}   (p for paragraph tag and a for anchoee tag.)
+            4.Adjacent-sibling ->H1 ~p
+psedu selector:
+-----------------------------Box model-----------------------------------------
+1.Dimension-> Height,width---->units-->px,%
+2.border---->single property---------------->>>>>>border-width
+                                                  border-color
+                                                  border-style
+                                                  short hand SYNTAX for border--border:2px solid red
+                                                  border-redius:;
+
+3.Padding
+4.Margin
+-----------------------Position ----------------
+1.Static
+2.Relative:- we can move in its initial Position.
+3.Absolute
+4.Fixed
+5.Sticky
+------------------flex-----------
+flex:-It makes our container flexible.
+Note.always apply on container.
+ flex-direction:row;
+ flex-wrap:wrap;
+ justify-content:end,center,start;
+ space-between,space-around;
+ flex-grow:2;
+ flex-shrink:2;
+--------Grid--------------------------------------------
+------------Transition----------------------------------
+delay:-
+duration:-
+timing fucntion:-
+------------transform----------------------------------
+transition-timing -fucntion:cibic-bezier-()
+translate:-move element in x,y
+rotate:-to rotate
+transition-timing -fucntion:cibic-bezier-()
+scale:-
+------------------media query-------------------------
+@media()
+---------------Animation------------------------------
+Animation:-
+    original state:--
+    funtion
+______________________________________________________________________________________________________________________________________
+-----------------------TAILWIND-----------------------
+class:-
+custom value:-
+    w-[100px]
+#flex 
+    class"flex"
+------------------------------------------------JAVA SCRIPT-------------------------------------------------------------
+
+Keywords to create variable in JS
+var:-
+let:-
+const:-
+backticks:-we can access variable/funtion/calculation inside  sting="Thsi is a sting ${variable name}.
+String methhod :-
+------------------object----------------------
+#complex object and arrays
+#object inside oject and more changing or array inside object and vice-verse.
+
+--------------loops--------------------------
+while loop:-
+for loop:-
+for(const item in arr){
+    con
+}

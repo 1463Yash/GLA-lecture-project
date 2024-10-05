@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    #nav{
+        background-color: black;
+        justify-content:space-between ;
+        height: 100px;
+        width: 100vw;
+        background-color: rgb(254, 220, 0);
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+     
+    }
+    #menu>a{
+        margin: 5px;
+        text-decoration: none;
+        color:rgb(254, 89, 0);
+        font-size: 25px;
+        position: relative;
+        right: 20px;
+        transition: 0.2s ease;
+    }
+   #menu>a:hover{
+        
+        color: white;
+    }
+    .main{
+       
+        border: 1px solid wheat;
+        border-radius: 10px;
+        width: 70%;
+        position: relative;
+        margin-top: 110px;
+        margin-bottom: 15px;
+        left: 15%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: auto;
+        background-image: url(nav\ bar\ img.jpg);
+
+    }
+    .main>div{
+        margin: 5%;
+        border: 1px solid white;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        background-color:white;
+        overflow: hidden;
+        transition:transform 0.2s ease;
+    }
+    .main>div:hover{
+    
+        transform: scale(1.1);
+    }
+    .main>div>p{
+        margin-left: 5px;
+        margin-right: 5px
+    }
+    
+    
+    #login{
+        padding-left: 40%;
+        background-image: linear-gradient(rgb(223, 189, 16) ,rgba(233, 249, 86, 0.69));
+    }
+    #footer{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 30px;
+        font-size: large;
+        background-color: rgb(22, 19, 49);
+        margin-top: 20px;
+    }
+    #footer>div{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 5px;
+        padding: 10px;
+        color: aliceblue;
+    }
+</style>
+<body >
+    <div id="nav">
+        <div class="forImg" style="margin-left: 15px;">
+        <img src="logo.jpg" alt="" style="height: 80px;width: 80px;border-radius: 80px;">
+        </div>
+        <div id="serch" ><input type="text" placeholder="Search" style="width: 500px;height: 50px;text-align: start;font-size: larger;border-radius:30px; text-align: center;opacity:0.6 ;">
+        <button style="height: 40px;width: 80px;border-radius: 20px;font-size: larger;text-align: center;opacity: 0.8;">Search</button></div>
+        <div id="menu">
+            <a href="i2.html" >Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#login">log in</a>
+        </div>
+    </div>
+        <div class="main">
+        <div id="first_img"><img src="first img.jpg" alt="img" style="height: 300px;width: 300px;">
+            <p style="font-size: 30px;font-family: serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus asperiores blanditiis animi illo cupiditate vitae quis! Unde officia pariatur iste dolorum quod nemo placeat nisi! Exercitationem quasi magni quidem incidunt.
+            Provident quibusdam cupiditate asperiores rerum ab reprehenderit, ea offic.</p>
+        </div>
+        <div id="second_img" style="display: flex;justify-content:end;">
+            <p style="font-size: 30px;font-family: serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus asperiores blanditiis animi illo cupiditate vitae quis! Unde officia pariatur iste dolorum quod nemo placeat nisi! Exercitationem quasi magni quidem incidunt.
+                Provident quibusdam cupiditate asperiores rerum ab reprehenderit, ea offic.</p><img src="second img.jpg" alt="img" style="height: 300px;width: 300px;"></div>
+        <div id="third_img"><img src="third img.jpg" alt="img" style="height: 300px;width: 300px;">
+            <p style="font-size: 30px;font-family: serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus asperiores blanditiis animi illo cupiditate vitae quis! Unde officia pariatur iste dolorum quod nemo placeat nisi! Exercitationem quasi magni quidem incidunt.
+                Provident quibusdam cupiditate asperiores rerum ab reprehenderit, ea offic.</p></div>
+        <div id="fourth_img" style="display:flex;justify-content: end;">
+            <p style="font-size: 30px;font-family: serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus asperiores blanditiis animi illo cupiditate vitae quis! Unde officia pariatur iste dolorum quod nemo placeat nisi! Exercitationem quasi magni quidem incidunt.
+                Provident quibusdam cupiditate asperiores rerum ab reprehenderit, ea offic.</p><img src="fourth img.jpg " alt="img" style="height: 300px;width: 300px;"></div>
+        <div id="fifth_img"><img src="fifth img.jpg" alt="img" style="height: 300px;width: 300px;">
+            <p style="font-size: 30px;font-family: serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus asperiores blanditiis animi illo cupiditate vitae quis! Unde officia pariatur iste dolorum quod nemo placeat nisi! Exercitationem quasi magni quidem incidunt.
+                Provident quibusdam cupiditate asperiores rerum ab reprehenderit, ea offic.</p></div>
+   </div>
+   !<!--login-section-->
+   <div id="login">
+   
+        <h1 style="padding-left: 1%;">Log  In</h1>
+        <input type="text"placeholder="Enter email" style="height: 50px;width: 300px;font-size: x-large;margin: 15px;text-align: center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;background-color: rgb(217, 217, 219);border-radius: 20%;border: 0;"><br>
+        <input type="password" placeholder="password"style="height: 50px;width: 300px;font-size: x-large;margin:15px;text-align:center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;background-color: rgb(217, 217, 219);border-radius:20%;border:0;"><br>
+        <a href="#" style="margin-left: 15px;font-family: 'Times New Roman', Times, serif;">forget password</a><br>
+        <button type="submit" style="height: 50px;width: 300px;border-radius: 10px;font-family:'Times New Roman', Times, serif;font-size: larger;margin: 15px;font-family:Georgia, 'Times New Roman', Times, serif;background-color: rgb(254, 220, 0);border: 0;"><b>Login</b></button></div>
+    <img src="whatsapp.png" alt="img-whatapp" style="height: 80px;width: 80px;position:fixed;right:20px;bottom: 15px;">
+<!--footer section-->
+<div id="footer">
+    <div id="program">
+       <h3> <b><u>Program</u></b></h3>
+        Corporate <br>
+        One to one<br>
+        Consulting
+    </div>
+    <div id="Serive">
+        <h2><b><u>Service</u></b></h2>
+        Traning<br>
+        Coaching<br>
+        Consulting
+    </div>
+    <div id="Contact">
+       <h3> <b><u>Contact</u></b></h3>
+       Home <br>
+       About <br>
+       Contact
+    </div>
+    <div id="newslatter">
+        <h3><b>Newsletter</b></h3>
+        <input type="text" placeholder="Email" style="height: 30px;width: 250px;border-radius: 10px;font-size: medium;text-align: center;">
+        <button style="height: 30px;width: 80px;background-color: rgb(255, 56, 6);text-align: center;border-radius: 10px;"><b>Submit</b></button>
+    </div>
+</div>
+
+
+</body>
+</html>

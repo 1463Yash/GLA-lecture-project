@@ -1,0 +1,11 @@
+.form{
+    height: auto;
+    width: auto;
+    border-style: solid;
+    border-color: rgb(35, 36, 37);
+}
+
+#box{
+    height: 100px;
+    width: 100px;
+}

@@ -1,0 +1,43 @@
+#pg{
+    background-color: aqua;
+    width: 20%;
+    border-color: violet;
+    border-width: 5px;
+}
+#LP{
+    height: auto;
+    width: auto;
+    border-style: solid;
+}
+
+#LP>div:nth-last-of-type(1){
+    height: 100px;
+    width: 100px;
+    border:2px solid;
+    padding: 5px;
+    
+    background-color: lightcoral;
+      
+}
+#LP>div:nth-of-type(2){
+    height: 150px;
+    width: 150px;
+    border:2px solid;
+    padding: 5px;
+    background-color: lightcoral; 
+    margin-left: 200px;
+}
+#LP>div:nth-of-type(3){
+    height: 200px;
+    width: 200px;
+    border:2px solid;
+    padding: 5px;
+    background-color: lightcoral; 
+}
+/* #LP>div:hover{
+    background-color: aquamarine;
+    
+    transition: transform 0.2s ease;
+    transform: scale(1.1);
+   
+} */
