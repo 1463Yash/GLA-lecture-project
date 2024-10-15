@@ -1,0 +1,45 @@
+.main>div{
+    height: 100px;
+    width: 100px;
+    border: solid;
+    display:inline-block;
+    display:inline-flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 20px;
+    animation-name: manime;
+    animation-duration: 10s;
+    
+}
+@keyframes manime{
+    
+    25% {
+        top: 0;
+        left: 75%;
+        background-color: aqua;
+        transform: rotate(4turn);
+
+    }
+
+    50% {
+        transform: rotate(4turn);
+        top: 75%;
+        left: 0;
+        background-color: khaki;
+
+
+    }
+
+    75% {
+        top: 75%;
+        left: 0;
+        background-color: palegreen;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+
+    }
+}
+

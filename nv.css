@@ -1,45 +1,50 @@
 div{
     width: 100px;
-    height: 100px;
+    height: 10px;
     border-radius: 10px;
+    top: 50%;
+    left: 50%;
     background-color: orchid;
     position: absolute;
     animation-name: firstAnnime;
     animation-duration: 5s; 
     animation-iteration-count: infinite;
-    animation-direction: alternate; 
+    /* animation-direction: alternate;  */
 }
 @keyframes firstAnnime {
     0%{
-        top:200px;
-        left: 0px;
-        transform: rotate(1turn);
+        top:50%;
+        left: 50%;
+        transform:rotate(4turn);
 
     }
-    /* 25%{
+     25%{
         top: 0;
         left:75%;
         background-color: aqua;
-        transform: rotate(4turn);
+       transform: rotate(4turn); 
     
-    } */
-    /* 50%{
+    } 
+    50%{
+        transform: rotate(4turn);
         top: 75%;
         left: 75%;
         background-color: khaki;
+       
+       
     }
     75%{
         top: 75%;
-        left: 0;
+        left:0;
         background-color: palegreen;
-    } */
+    }
     100%{
         top: 0;
         left: 0;
 
     } 
 }
-h1{
+/* h1{
    font-size: 100px;
    text-align: center; 
 }
@@ -66,4 +71,4 @@ h1:active{
     100%{
 
     }
-}
+} */
