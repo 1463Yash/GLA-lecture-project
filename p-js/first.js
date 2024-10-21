@@ -1,2 +1,11 @@
-const num=prompt("Enter the number.");
- const arr=[3,"4",5,"6",7,"8",9,10,11,"12"];
+let a=10;
+let b;
+let ans=fun(a,b);
+console.log(ans);
+
+console.log(ans);
+function fun(a,b){
+    
+   let sum=a+b;
+    return sum;
+}

@@ -301,3 +301,21 @@ for loop:-
 for(const item in arr){
     con
 }
+--------------------hosting---------------------------
+MDP:-Memory distribution phase.
+CEP:-Code execution phase.
+MDP:-This run first in code and give  undefined Memoryto the variable.
+CEP:-This phase come after MDP and excute the  code.
+Note:-if we sum of two number like a=10; and b;(b=undefined) then the answer will come 
+"NaN"(not a number).
+let a=10;
+let b;
+let ans=fun(a,b);
+console.log(ans);
+
+console.log(ans);
+function fun(a,b){
+    
+   let sum=a+b;
+    return sum;
+}
