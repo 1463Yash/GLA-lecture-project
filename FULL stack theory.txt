@@ -331,5 +331,5 @@ fuction cb(){
 }
 console.log(higher(cb));
 fuction(){
-    
+    let a=10;
 }
