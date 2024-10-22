@@ -319,3 +319,17 @@ function fun(a,b){
    let sum=a+b;
     return sum;
 }
+higher order function:-A higher-order function (HOF) in JavaScript is a function that can accept functions as parameters or return a function.
+function higher(call back){
+    let a=10;
+    let ans =callback;
+    return ans+a;
+}
+fuction cb(){
+    let b=20;
+    return b+20;
+}
+console.log(higher(cb));
+fuction(){
+    
+}
