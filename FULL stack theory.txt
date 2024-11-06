@@ -333,3 +333,17 @@ console.log(higher(cb));
 fuction(){
     let a=10;
 }
+----------------------promisses-------------------------------
+1.fullfill(resolved)
+2.reejected
+3.pending
+const promise =new promise(resolve,reeject)=>{
+    setTimeout(()=>{
+        resolve("Hello world)
+     } ,2000);
+    };
+promise9then(()=>{
+    console.log('promise resolved');
+}).catch=>{
+    console.log('promise reejected');
+}
